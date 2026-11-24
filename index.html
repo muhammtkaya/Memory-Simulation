@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Memory Simulation — İşletim Sistemi Bellek & Depolama Simülatörü</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">◉</span>
+      <div>
+        <h1>Memory Simulation</h1>
+        <p class="sub">Cache · RAM · Disk · Paging · Stack/Heap · RAID — endüstri davranışına yakın etkileşimli simülatör</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" id="nav">
+      <button class="nav-btn active" data-mod="hierarchy">1 · Bellek Hiyerarşisi</button>
+      <button class="nav-btn" data-mod="translation">2 · Adres Çevirme (VA→PA)</button>
+      <button class="nav-btn" data-mod="paging">3 · Sayfa Değiştirme</button>
+      <button class="nav-btn" data-mod="stackheap">4 · Stack &amp; Heap</button>
+      <button class="nav-btn" data-mod="raid">5 · RAID</button>
+      <button class="nav-btn" data-mod="dataremoval">6 · Veri Silme &amp; Kalıntı</button>
+      <div class="nav-foot">
+        <span class="dot"></span> Eğitim amaçlı · basitleştirilmiş model
+      </div>
+    </nav>
+
+    <main class="content" id="content">
+      <!-- Modüller buraya render edilir -->
+    </main>
+  </div>
+
+  <script src="js/util.js"></script>
+  <script src="js/hierarchy.js"></script>
+  <script src="js/translation.js"></script>
+  <script src="js/paging.js"></script>
+  <script src="js/stackheap.js"></script>
+  <script src="js/raid.js"></script>
+  <script src="js/dataremoval.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
